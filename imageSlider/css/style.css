@@ -1,13 +1,17 @@
+/*初始化*/
 *{
     padding:0;
     margin:0;
 }
+
+/*作为放映机存在的最外层容器,固定宽高,通过overflow隐藏超出其区域的内容*/
 #container{
     width:560px;
     height:300px;
     overflow: hidden;
     position: relative;
 }
+/*这个容器充当胶卷设成绝对定位用来存放多个图片,图片排在一行里面*/
 #content{
     list-style: none;
     width:2000px;
@@ -15,10 +19,12 @@
     left:0;
     right:0;
 }
+/*这是每张图片的设置,图片大小和最外层的放映机一样,并通过float让其排在同一行里面*/
 .list{
     width:560px;
     float: left;
 }
+/*这是按钮*/
 #moveLeft{
     width:100px;
 }
